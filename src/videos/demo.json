@@ -1,0 +1,26 @@
+{
+  "id": "demo",
+  "format": "half",
+  "fps": 30,
+  "duration": 27,
+  "scenes": [
+    { "type": "hook", "start": 0, "eyebrow": "Demo video", "headline": "Every scene, *timed to your voice.*", "sub": "This is a silent demo of each scene type.", "subAt": 1.2 },
+    { "type": "statement", "start": 3, "bg": "surface", "eyebrow": "Statement", "headline": "One headline. *One payoff.*", "sub": "A plain line that lands one idea.", "subAt": 4 },
+    { "type": "inbox", "start": 6, "eyebrow": "Inbox", "headline": "Sent for you. *Never opened.*",
+      "folder": "Junk", "folderAt": 8.2, "tag": "Not from you", "tagAt": 7.6, "from": "no-reply · some tool", "subject": "Your weekly summary",
+      "badge": "Unopened", "badgeAt": 7, "wallAt": 8.6 },
+    { "type": "steps", "start": 9.5, "eyebrow": "Steps", "headline": "Three steps. *That's it.*", "steps": [
+      { "title": "Record your voice", "text": "Say the script in your own words.", "at": 10.3 },
+      { "title": "Claude times it", "text": "Every word gets a timestamp.", "at": 11.1 },
+      { "title": "Get the video", "text": "Branded and ready to post.", "at": 11.9 } ] },
+    { "type": "screenshot", "start": 13, "eyebrow": "Screenshot", "headline": "Point at *what matters.*",
+      "image": "videos/demo/example-report.png", "highlights": [
+        { "at": 14.2, "top": 40, "height": 51, "left": 61, "right": 1.5 } ] },
+    { "type": "stat", "start": 16.5, "bg": "surface", "eyebrow": "Big number", "headline": "Numbers *count up.*", "value": 42, "suffix": "%", "label": "example number, use only real ones", "at": 17.2 },
+    { "type": "quote", "start": 19.5, "text": "The one line you want people to remember goes *right here.*" },
+    { "type": "cta", "start": 22.5, "eyebrow": "Closing scene", "headline": "End with *one action.*",
+      "checks": [ { "text": "One thing to try", "at": 23.3 }, { "text": "One thing it gets them", "at": 23.8 } ],
+      "button": { "text": "Do it this week", "at": 24.5 },
+      "footer": { "text": "Then tell me in the comments how it went.", "at": 25.2 } }
+  ]
+}
