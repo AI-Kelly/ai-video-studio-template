@@ -81,7 +81,7 @@ export const Wash: React.FC<{ kind: 'mist' | 'warm'; style: React.CSSProperties 
 export const CheckBadge: React.FC = () => (
   <span style={{ flexShrink: 0, width: '1.6em', height: '1.6em', borderRadius: '50%', background: C.accent, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
     <svg viewBox="0 0 16 16" fill="none" style={{ width: '0.95em', height: '0.95em' }}>
-      <path d="M3.5 8.5l3 3 6-7" stroke={C.ink} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3.5 8.5l3 3 6-7" stroke={C.onAccent} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   </span>
 );

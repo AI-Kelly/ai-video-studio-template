@@ -1,6 +1,7 @@
 // ============================================================
 //  YOUR BRAND. This is the only file you need to change to make
 //  the videos look like yours. Ask Claude: "set up my brand".
+//  The defaults below are a plain, neutral placeholder look.
 // ============================================================
 import { loadFont } from '@remotion/fonts';
 import { staticFile } from 'remotion';
@@ -10,25 +11,26 @@ export const BRAND = {
   name: 'Your Company',
 
   colors: {
-    paper: '#fff9f3',        // light background (never pure white)
-    surface: '#f5efe6',      // second light background, used every 2nd or 3rd scene
-    line: '#e4ddd4',         // thin borders and empty bars
-    primary: '#0d4a54',      // headlines on light, dark scene background
-    primaryLift: '#0f5b66',  // lighter shade of primary (dark gradient start)
-    primaryShade: '#0a3a42', // darker shade of primary (dark gradient end)
-    secondary: '#1a7a8a',    // small labels, step numbers, connector lines
-    soft: '#b8dae0',         // soft background glows
-    accent: '#d4922a',       // THE one accent: payoff words, highlights, button
-    ink: '#1e2430',          // body text, closing scene background
-    inkMuted: '#5c6470',     // secondary body text
-    headingOnDark: '#f1e9e9',// headline color on the closing scene
-    extra: '#8a9a6e',        // one extra color for the opener's color blocks
+    paper: '#faf9f7',        // light background (never pure white)
+    surface: '#f1f0ed',      // second light background, used every 2nd or 3rd scene
+    line: '#e2e0dc',         // thin borders and empty bars
+    primary: '#2b2f36',      // headlines on light, dark scene background
+    primaryLift: '#3a3f48',  // lighter shade of primary (dark gradient start)
+    primaryShade: '#1e2126', // darker shade of primary (dark gradient end)
+    secondary: '#6b7280',    // small labels, step numbers, connector lines
+    soft: '#d9dce1',         // soft background glows
+    accent: '#3f6fd9',       // THE one accent: payoff words, highlights, button
+    onAccent: '#faf9f7',     // text and check marks drawn ON the accent color (must be readable on it)
+    ink: '#22252a',          // body text, closing scene background
+    inkMuted: '#6b6f76',     // secondary body text
+    headingOnDark: '#f3f3f1',// headline color on the closing scene
+    extra: '#9aa0a8',        // one extra color for the opener's color blocks
   },
 
   // Font files live in public/fonts (.woff2). See "set up my brand" in CLAUDE.md.
   fonts: {
-    display: { family: 'Outfit', files: { 400: 'outfit-latin-400-normal.woff2', 500: 'outfit-latin-500-normal.woff2', 600: 'outfit-latin-600-normal.woff2', 700: 'outfit-latin-700-normal.woff2' } },
-    body: { family: 'Source Sans 3', files: { 400: 'source-sans-3-latin-400-normal.woff2', 500: 'source-sans-3-latin-500-normal.woff2', 600: 'source-sans-3-latin-600-normal.woff2' } },
+    display: { family: 'Inter', files: { 400: 'inter-latin-400-normal.woff2', 500: 'inter-latin-500-normal.woff2', 600: 'inter-latin-600-normal.woff2', 700: 'inter-latin-700-normal.woff2' } },
+    body: { family: 'Inter', files: { 400: 'inter-latin-400-normal.woff2', 500: 'inter-latin-500-normal.woff2', 600: 'inter-latin-600-normal.woff2' } },
   },
 };
 

@@ -14,7 +14,7 @@ This project uses [Remotion](https://www.remotion.dev) to make the videos. Remot
 2. **Connect GitHub to Claude.** In Claude, go to Customize, then Connectors, then GitHub, and connect your account if you haven't already.
 3. **Give Claude access to your new repo.** On GitHub, go to Settings, then Applications, then Installed GitHub Apps, then Claude, then **Configure**. Under Repository access, add your new repo (or pick "All repositories") and save.
 4. **Start a session.** Open Claude Code in the browser, start a new session, and pick your new repo.
-5. **Say "set up my brand."** Claude asks for your company name, colors, and fonts, swaps them in, and sends you a demo video in your brand.
+5. **Say "set up my brand."** Claude asks for your company name, colors, and fonts, walks you through the style rules (keep, change, or add your own), and sends you a demo video in your brand. Until you do this, videos use a plain neutral look.
 
 ## Make a video
 
@@ -50,8 +50,9 @@ The browser version sends you finished videos. If you'd like to scrub through a 
 
 ## What's in here
 
-- `src/brand.ts`: your colors and fonts (the only file you change for your brand)
+- `src/brand.ts`: your colors and fonts
+- `STYLE.md`: your style rules for the look and on-screen writing
 - `src/scenes/`: the scene designs
 - `src/videos/`: one cue sheet per video (`demo.json` shows every scene)
 - `public/videos/<video-id>/`: each video's audio, screenshots, and word timings
-- `public/fonts/`: font files (Outfit and Source Sans 3 by default, Open Font License)
+- `public/fonts/`: font files (Inter by default, Open Font License)

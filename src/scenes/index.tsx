@@ -61,7 +61,7 @@ export const Inbox: React.FC<{ s: Of<'inbox'> }> = ({ s }) => {
       <div style={{ marginTop: '3.6em', background: C.paper, border: `1px solid ${C.line}`, borderRadius: '1.6em', boxShadow: `0 20px 50px ${alpha(C.primary, .10)}`, overflow: 'hidden', position: 'relative', ...reveal(f, fps, 0.45) }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.2em', padding: '1.6em 2.2em', borderBottom: `1px solid ${C.line}`, background: C.surface, minHeight: '5.2em' }}>
           <span style={{ fontFamily: DISPLAY, fontWeight: 600, fontSize: '1.6em', color: C.primary, ...reveal(f, fps, L(s.folderAt), 'left') }}>{s.folder}</span>
-          <span style={{ marginLeft: 'auto', fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.3em', letterSpacing: '0.12em', textTransform: 'uppercase', background: C.accent, color: C.ink, padding: '0.45em 0.9em', borderRadius: '0.5em', ...pop(s.tagAt) }}>{s.tag}</span>
+          <span style={{ marginLeft: 'auto', fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.3em', letterSpacing: '0.12em', textTransform: 'uppercase', background: C.accent, color: C.onAccent, padding: '0.45em 0.9em', borderRadius: '0.5em', ...pop(s.tagAt) }}>{s.tag}</span>
         </div>
         <div style={{ padding: '2em 2.2em 0.6em', fontFamily: DISPLAY, fontSize: '1.7em', color: C.inkMuted }}><b style={{ color: C.ink, fontWeight: 600 }}>{s.from.split('·')[0]}</b>{s.from.includes('·') ? ' · ' + s.from.split('·')[1].trim() : ''}</div>
         <div style={{ padding: '0 2.2em', fontFamily: DISPLAY, fontSize: '2.1em', fontWeight: 600, color: C.ink }}>{s.subject}</div>
@@ -95,7 +95,7 @@ export const Steps: React.FC<{ s: Of<'steps'> }> = ({ s }) => {
                 background: hl ? C.primary : C.paper, border: `1px solid ${hl ? C.primary : C.line}`,
                 boxShadow: hl ? `0 22px 50px ${alpha(C.primary, .22)}` : `0 4px 16px ${alpha(C.primary, .04)}`, ...reveal(f, fps, at),
               }}>
-                <span style={{ flexShrink: 0, width: '4.6em', height: '4.6em', borderRadius: '0.9em', background: hl ? C.accent : C.surface, color: hl ? C.ink : C.secondary, fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.3em', letterSpacing: '0.1em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{String(i + 1).padStart(2, '0')}</span>
+                <span style={{ flexShrink: 0, width: '4.6em', height: '4.6em', borderRadius: '0.9em', background: hl ? C.accent : C.surface, color: hl ? C.onAccent : C.secondary, fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.3em', letterSpacing: '0.1em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{String(i + 1).padStart(2, '0')}</span>
                 <div>
                   <div style={{ fontFamily: DISPLAY, fontSize: '2.4em', fontWeight: 600, color: hl ? C.paper : C.primary, letterSpacing: '-0.01em' }}>{st.title}</div>
                   <div style={{ fontSize: '1.6em', color: hl ? `${alpha(C.paper, .72)}` : C.inkMuted, marginTop: '0.2em' }}>{st.text}</div>
@@ -176,7 +176,7 @@ export const Cta: React.FC<{ s: Of<'cta'> }> = ({ s }) => {
           </li>
         ))}
       </ul>
-      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8em', marginTop: '3.6em', background: C.accent, color: C.ink, fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.9em', padding: '1em 1.8em', borderRadius: '0.6em', boxShadow: `0 8px 24px ${alpha(C.accent, .28)}`, ...reveal(f, fps, btnAt) }}>
+      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8em', marginTop: '3.6em', background: C.accent, color: C.onAccent, fontFamily: DISPLAY, fontWeight: 700, fontSize: '1.9em', padding: '1em 1.8em', borderRadius: '0.6em', boxShadow: `0 8px 24px ${alpha(C.accent, .28)}`, ...reveal(f, fps, btnAt) }}>
         {s.button.text} <span style={{ display: 'inline-block', transform: `translateX(${nudging ? nudge : 0}px)` }}>&rarr;</span>
       </div>
       {s.footer && <p style={{ fontSize: '1.6em', color: `${alpha(C.paper, .6)}`, marginTop: '1.6em', ...reveal(f, fps, local(s.footer.at, s.start, 1.2), 'fade') }}>{s.footer.text}</p>}
